@@ -72,7 +72,7 @@ export default function Header() {
             <div className="header_btn">
               <div className="flex items-center gap-2">
                 <Link className="block shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
-                <Link className="block shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/signup">Sign Up</Link>
+                <Link className="block shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/dashboard">Dashboard</Link>
               </div>
             </div>
           

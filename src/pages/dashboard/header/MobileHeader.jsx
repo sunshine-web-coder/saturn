@@ -29,7 +29,7 @@ export default function MobileHeader({ toggleDropdown }) {
         <div className="bg-[#d1f1ff] rounded w-6 h-[3px]"></div>
         <div className="bg-[#d1f1ff] rounded w-6 h-[3px]"></div>
       </div>
-      <div>
+      <div className="hidden">
         <Link to="/dashboard">
           <div>
             <img src="https://i.imgur.com/N20xYEO.png" alt="" />

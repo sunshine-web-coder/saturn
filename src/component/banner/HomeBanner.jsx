@@ -14,8 +14,7 @@ export default function HomeBanner() {
                 <h1 className="text-black mb-5 text-3xl md:text-5xl font-bold font-[Lora]">Transfer Money Across World In Real Time</h1>
                 <p className="mb-9">Dea of denouncing pleasure and praising pain was born and lete system, and expound the ac teachings aitems to sed quia non numquam amet sit dolor.</p>
                 <div>
-                    <Link to="" className="block w-[150px] text-base font-normal text-center rounded text-white p-4 bg-[#00A9A4]">Get Started</Link>
-
+                    <Link to="/signup" className="block w-[150px] text-base font-normal text-center rounded text-white p-4 bg-[#00A9A4]">Get Started</Link>
                 </div>
             </div>
             <div className="hero-img w-full md:w-[50%]">

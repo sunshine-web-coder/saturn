@@ -5,7 +5,10 @@ export default function Footer() {
     <div className="w-full shadow-sm border p-4 bg-[#fffff]">
       <div className="max-w-[1150px] mx-auto">
         <div className="flex flex-wrap gap-5 items-center pb-5 pt-5">
-          <img src="https://i.imgur.com/UjLnUh2.png" alt="" />
+          <div className="text-3xl font-bold text-[#142C8E]">
+          {/* <img src="https://i.imgur.com/UjLnUh2.png" alt="" /> */}
+                Saturn
+            </div>
           <nav className="">
             <ul className="flex text-[#0c0c0d] text-lg gap-7">
                 <li><Link to="" className="hover:underline">Help</Link></li>

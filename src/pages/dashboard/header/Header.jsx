@@ -28,8 +28,9 @@ export default function Header() {
         <div className="hidden md:block">
           <div className="flex items-center">
             <Link to="/dashboard">
-              <div>
-                <img src="https://i.imgur.com/N20xYEO.png" alt="" />
+              <div className="text-3xl font-bold text-[#ffffff]">
+                  {/* <img src="https://i.imgur.com/N20xYEO.png" alt="" /> */}
+                Saturn
               </div>
             </Link>
             <nav className="ml-5">

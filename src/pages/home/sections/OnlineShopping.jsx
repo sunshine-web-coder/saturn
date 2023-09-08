@@ -23,9 +23,9 @@ export default function OnlineShopping() {
           </div>
           <div className="mt-6">
             <ul className="text-[#030734] flex flex-col gap-4 text-lg font-medium">
-                <li className="flex gap-3 items-center"><TbChecks className="text-[#00A9A4]" /><span>Cards that work all across the world.</span></li>
-                <li className="flex gap-3 items-center"><TbChecks className="text-[#00A9A4]" /><span>Highest Returns on your investments.</span></li>
-                <li className="flex gap-3 items-center"><TbChecks className="text-[#00A9A4]" /><span>No ATM fees. No minimum balance. No overdrafts.</span></li>
+                <li className="flex gap-3"><TbChecks className="text-[#00A9A4]" /><span>Cards that work all across the world.</span></li>
+                <li className="flex gap-3"><TbChecks className="text-[#00A9A4]" /><span>Highest Returns on your investments.</span></li>
+                <li className="flex gap-3"><TbChecks className="text-[#00A9A4]" /><span>No ATM fees. No minimum balance. No overdrafts.</span></li>
             </ul>
           </div>
           <div className="mt-8">

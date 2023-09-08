@@ -1,11 +1,13 @@
 import { Link } from "react-router-dom";
 import { NavLinkData } from "./data";
 import { Divider } from 'antd';
+import { RxHamburgerMenu } from 'react-icons/rx';
+import "./Header.scss"
 
 export default function Header() {
   return (
-    <div className="">
-      <div className="bg-[#030734]">
+    <div className="header">
+      <div className="bg-[#030734] hidden md:block">
         <div className="custom_container flex items-center justify-between gap-5">
           <div className="flex gap-5">
             <div className="text-[hsla(0,0%,100%,.8)] text-sm flex gap-2">
@@ -35,13 +37,12 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-[#FFFFFF] border">
+      <div className="bg-[#FFFFFF]">
         <div className="custom_container min-h-[90px] flex items-center justify-between">
           <div>
             <img src="https://i.imgur.com/GtKPy40.png" alt="" />
           </div>
-          <div>
-            <nav>
+            <nav className="navBar">
               <ul className="flex gap-8 items-center">
                 {NavLinkData.map((links, i) => (
                   <li key={i}>
@@ -55,10 +56,16 @@ export default function Header() {
                 ))}
               </ul>
             </nav>
-          </div>
-          <div className="flex items-center gap-2">
-            <Link className="block shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
-            <Link className="block shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/signup">Sign Up</Link>
+            <div className="hidden md:block">
+              <div className="flex items-center gap-2">
+                <Link className="block shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
+                <Link className="block shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/signup">Sign Up</Link>
+              </div>
+            </div>
+          
+          <div className="block md:hidden">
+            {/* <i className="fa-solid text-lg text-[#00A9A4] fa-bars"></i> */}
+            <RxHamburgerMenu className="text-3xl text-[#00A9A4]" />
           </div>
         </div>
       </div>

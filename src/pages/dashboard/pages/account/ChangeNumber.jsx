@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
 import Button from "../../../../component/button/Button";
@@ -7,10 +7,6 @@ import { toast } from "react-hot-toast";
 
 export default function ChangeNumber() {
   const [phoneNumber, setPhoneNumber] = useState("");
-
-  const [phoneNumberError, setPhoneNumberError] = useState("");
-
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();

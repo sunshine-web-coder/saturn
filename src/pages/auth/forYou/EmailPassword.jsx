@@ -26,7 +26,7 @@ export default function EmailPassword() {
       // Password must be at least 8 characters, contain a number,
       // a special character, and an uppercase letter.
       const passwordRegex =
-        /^(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+      /^(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"|,.<>/?])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
       return passwordRegex.test(password);
     };
 

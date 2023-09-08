@@ -26,7 +26,7 @@ export default function ChangePassword() {
       // Password must be at least 8 characters, contain a number,
       // a special character, and an uppercase letter.
       const passwordRegex =
-        /^(?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
+      /^(?=.*\d)(?=.*[!@#$%^&*()_+\-=[\]{};':"|,.<>/?])(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
       return passwordRegex.test(password);
     };
 
@@ -46,7 +46,7 @@ export default function ChangePassword() {
 
     if (!confirmNewPassword) {
       errors.confirmNewPassword = "Confirm your new password";
-    } else if (newPassword.value !== confirmNewPassword.value) {
+    } else if (newPassword !== confirmNewPassword) {
       errors.confirmNewPassword =
         "Your passwords don’t match. Please retype your password to confirm it.";
     }
@@ -58,7 +58,7 @@ export default function ChangePassword() {
     if (Object.keys(errors).length === 0) {
       navigate(""); // Navigate only if there are no errors
       toast.success(
-        <div className="p-4 pt-2 pb-2">Password updated successfully!</div>
+        <div className="p-4 pt-2 pb-2">New Password updated successfully!</div>
       );
     }
   };

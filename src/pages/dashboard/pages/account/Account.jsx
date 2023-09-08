@@ -56,19 +56,17 @@ export default function Account() {
               <div className="text-sm">Joined in 2023</div>
             </div>
           </div>
+          
           <form
             className="absolute bottom-[100px] flex items-center"
             onSubmit={handleSubmit}
           >
             <div className="pl-6 pr-6">
               <div
-                className="relative thAvatar bg-no-repeat bg-cover bg-blue-950 shadow-md w-[100px] h-[100px] rounded-full"
+                className="relative flex flex-col justify-end thAvatar bg-no-repeat bg-cover bg-blue-950 shadow-md w-[100px] h-[100px] rounded-full"
                 style={backgroundImageStyle}
               >
                 <div className="upload-btn-wrapper absolute bottom-0 w-full">
-                  <button className="upload-btn text-white border-0 bg-black/60 w-full text-sm">
-                    <i className="fa-solid fa-camera"></i>
-                  </button>
                   <input
                     type="file"
                     name="myfile"
@@ -76,6 +74,9 @@ export default function Account() {
                     onChange={handleImageChange}
                     ref={fileInputRef}
                   />
+                  <button className="upload-btn text-white border-0 bg-black/60 w-full text-sm">
+                    <i className="fa-solid fa-camera"></i>
+                  </button>
                 </div>
               </div>
             </div>

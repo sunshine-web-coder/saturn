@@ -1,4 +1,4 @@
-import HomeBanner from '../../components/banner/HomeBanner'
+import HomeBanner from '../../component/banner/HomeBanner'
 import ChargeForm from './sections/ChargeForm'
 import Cta from './sections/Cta'
 import FeatureWrap from './sections/FeatureWrap'

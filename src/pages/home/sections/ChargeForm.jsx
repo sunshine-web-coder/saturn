@@ -24,7 +24,7 @@ export default function ChargeForm() {
   };
 
   return (
-    <div className="pt-[80px] pb-[80px] bg-[#010647]">
+    <div className="md:pt-[80px] pt-[50px] md:pb-[80px] pb-[50px] bg-[#010647]">
       <div className="custom_container">
         <form
           className="charge_form"
@@ -76,13 +76,13 @@ export default function ChargeForm() {
             </div>
           </div>
 
-          <div className="flex gap-2 items-center text-base mt-5 text-[hsla(0,0%,100%,.8)]">
+          <div className="flex flex-col md:flex-row gap-2 items-start md:items-center text-base mt-5 text-[hsla(0,0%,100%,.8)]">
             <p>
               <span className="font-semibold text-white">82.50</span> Exchange
               Rate <span className="font-semibold text-white">$5.50</span>{" "}
               Transition Fees
             </p>
-            <Divider type="vertical" className="border-[hsla(0,0%,100%,.8)] h-3 relative top-[2px]" />
+            <Divider type="vertical" className="border-[hsla(0,0%,100%,.8)] hidden md:block h-3 relative top-[2px]" />
             <p>
               By clicking continue, I am agree with{" "}
               <Link to="/ruxa/terms-of-service" className="text-[#00A9A4]">

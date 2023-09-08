@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function OnlineShopping() {
   return (
-    <div className="pt-[80px] pb-[80px]">
+    <div className="md:pt-[80px] pt-[50px] md:pb-[80px] pb-[50px]">
       <div className="custom_container flex-col-reverse md:flex-row flex items-center gap-4 justify-between">
         <div className="w-full md:w-[50%]">
           <div>

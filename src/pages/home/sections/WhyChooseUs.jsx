@@ -4,7 +4,7 @@ import { whyChooseUsData } from "./data";
 
 export default function WhyChooseUs() {
   return (
-    <div className="pt-[10px] md:pt-[80px] pb-[80px]">
+    <div className="pt-[10px] md:pt-[80px] pb-[50px] md:pb-[80px]">
       <div className="custom_container why_choose_us flex flex-col md:flex-row gap-10 justify-between">
         <div className="w-full md:w-[50%] relative">
             <img className="max-w-full h-auto" src="https://vue.hibootstrap.com/ruxa/img/wh-img-1.f5b8c740.png" alt=""/>

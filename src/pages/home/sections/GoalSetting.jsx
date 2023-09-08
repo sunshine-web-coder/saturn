@@ -4,7 +4,7 @@ import { IoCheckbox } from 'react-icons/io5';
 
 export default function GoalSetting() {
   return (
-    <div className="pt-[80px] pb-[80px]">
+    <div className="md:pt-[80px] pt-[50px] md:pb-[80px] pb-[50px]">
       <div className="custom_container why_choose_us flex-col md:flex-row flex gap-10 justify-between">
         <div className="w-full md:w-[50%] relative">
           <img className="max-w-full h-auto" src="https://vue.hibootstrap.com/ruxa/img/goal-1.dacf6f1b.jpg" alt=""/>

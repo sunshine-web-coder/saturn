@@ -4,7 +4,7 @@ import { ourServicesData } from "./data";
 
 export default function OurServices() {
   return (
-    <div className="pt-[80px] our_services pb-[80px] bg-[#030734]">
+    <div className="md:pt-[80px] pt-[50px] our_services md:pb-[80px] pb-[50px] bg-[#030734]">
       <div className="custom_container our_services_in">
         <div className="text-center">
             <span className="text-base font-medium text-[#00A9A4]">Our Services</span>

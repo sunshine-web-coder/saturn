@@ -3,7 +3,7 @@ import { featureWrapData } from "./data";
 
 export default function FeatureWrap() {
   return (
-    <div className="pt-[80px] pb-[80px]">
+    <div className="md:pt-[80px] pt-[50px] md:pb-[80px] pb-[50px]">
       <div className="custom_container flex flex-col md:flex-row gap-4 justify-between">
         {featureWrapData.map((feature, i) => (
           <div className="w-full md:w-1/3 p-[25px] featureWrap rounded-md shadow-[0_0_25px_rgba(85,85,85,.1)]" key={i}>

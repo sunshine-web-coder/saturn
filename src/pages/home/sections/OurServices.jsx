@@ -15,7 +15,7 @@ export default function OurServices() {
             <img className="service-shape-one" src="https://i.imgur.com/rYz17CL.png" alt="" />
             <img className="service-shape-two" src="https://i.imgur.com/tef4DrY.png" alt="" />
                 {ourServicesData.map((ourServices, i) => (
-                <div className="w-[100%] flex flex-[0_0_auto] bg-[#161942] p-6 our_service_m rounded-xl" key={i}>
+                <div className="w-[100%] flex flex-col lg:flex-row flex-[0_0_auto] bg-[#161942] p-6 our_service_m rounded-xl" key={i}>
                     <div className="service_icon flex items-center justify-center">
                         <img src={ourServices.img} alt="" />
                     </div>

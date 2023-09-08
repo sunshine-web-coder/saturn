@@ -2,12 +2,16 @@ import { Link } from "react-router-dom";
 import { NavLinkData } from "./data";
 import { Divider } from 'antd';
 import { RxHamburgerMenu } from 'react-icons/rx';
+import { TfiClose } from 'react-icons/tfi';
 import "./Header.scss"
+import { useMenuToggle } from "../../context/MenuToggleContext";
 
 export default function Header() {
+  const { isOpen, toggle } = useMenuToggle();
+
   return (
     <div className="header">
-      <div className="bg-[#030734] hidden md:block">
+      <div className="bg-[#030734] top_header">
         <div className="custom_container flex items-center justify-between gap-5">
           <div className="flex gap-5">
             <div className="text-[hsla(0,0%,100%,.8)] text-sm flex gap-2">
@@ -37,12 +41,13 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="bg-[#FFFFFF]">
-        <div className="custom_container min-h-[90px] flex items-center justify-between">
+      <div className="bg-[#FFFFFF] bottom_header">
+        <div className="custom_container inner_header min-h-[90px] flex items-center justify-between">
           <div>
             <img src="https://i.imgur.com/GtKPy40.png" alt="" />
           </div>
-            <nav className="navBar">
+          {isOpen && (
+            <nav className={`navBar ${isOpen ? "open":"navBar"}`}>
               <ul className="flex gap-8 items-center">
                 {NavLinkData.map((links, i) => (
                   <li key={i}>
@@ -56,6 +61,7 @@ export default function Header() {
                 ))}
               </ul>
             </nav>
+          )}
             <div className="hidden md:block">
               <div className="flex items-center gap-2">
                 <Link className="block shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
@@ -63,8 +69,8 @@ export default function Header() {
               </div>
             </div>
           
-          <div className="block md:hidden">
-            <RxHamburgerMenu className="text-3xl text-[#00A9A4]" />
+          <div className="block md:hidden" onClick={toggle}>
+            {isOpen ? <TfiClose className="text-3xl text-[#00A9A4]" /> : <RxHamburgerMenu className="text-3xl text-[#00A9A4]" />}
           </div>
         </div>
       </div>

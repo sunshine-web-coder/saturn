@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "./banner.scss"
 
 export default function HomeBanner() {
   return (
-    <div className="bg-[#EDF9F9] pt-[20px] md:pt-[80px] pb-[80px] relative h-full">
+    <div className="bg-[#EDF9F9] pt-[20px] md:pt-[80px] banner pb-[80px] relative h-full">
         <img className="absolute top-0 hidden left-[50%]" src="https://i.imgur.com/OIq1cs7.png" alt="" />
         <img className="absolute top-[50%] left-0 translate-y-[-50%]" src="https://i.imgur.com/NitFxUX.png" alt="" />
         <img className="absolute bottom-0 right-0" src="https://i.imgur.com/j2wzWOp.png" alt="" />

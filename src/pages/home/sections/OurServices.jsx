@@ -8,7 +8,7 @@ export default function OurServices() {
       <div className="custom_container our_services_in">
         <div className="text-center">
             <span className="text-base font-medium text-[#00A9A4]">Our Services</span>
-            <h2 className="text-white font-[Lora] font-bold mt-[10px] text-5xl">Get Your Ruxa online Banking</h2>
+            <h2 className="text-white font-[Lora] font-bold mt-[10px] text-3xl md:text-5xl">Get Your Ruxa online Banking</h2>
         </div>
         <div>
             <div className="mt-[40px] our_services_grid">
@@ -19,7 +19,7 @@ export default function OurServices() {
                     <div className="service_icon flex items-center justify-center">
                         <img src={ourServices.img} alt="" />
                     </div>
-                    <div className="ml-[25px]">
+                    <div className="ml-[25px] service_text">
                         <h3 className="text-xl font-[Lora] text-white font-bold mb-[12px]">{ourServices.title}</h3>
                         <p className="text-base text-[hsla(0,0%,100%,.8)]">
                             {ourServices.text}

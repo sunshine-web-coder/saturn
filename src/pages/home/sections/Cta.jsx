@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function Cta() {
   return (
-    <div className="pt-[80px] pb-[80px] bg-[#030734]">
+    <div className="md:pt-[80px] pt-[50px] md:pb-[80px] pb-[50px] bg-[#030734]">
       <div className="custom_container flex-col md:flex-row flex gap-5">
         <div className="w-full md:w-7/12">
-          <h2 className="font-[Lora] font-bold text-4xl text-white">
+          <h2 className="font-[Lora] text-center md:text-left font-bold text-2xl md:text-4xl text-white">
             You Can Find All Things You Need In Our App
           </h2>
         </div>

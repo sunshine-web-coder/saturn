@@ -14,7 +14,7 @@ export default function GoalSetting() {
             <span className="text-lg text-[#00A9A4] font-medium">
               GoalSetting
             </span>
-            <h2 className="mt-2 font-[Lora] text-black text-4xl font-bold mb-3">
+            <h2 className="mt-2 font-[Lora] text-black text-2xl md:text-4xl font-bold mb-3">
               Manage Your Money With Online Banking Solution
             </h2>
             <p className="text-[#666666] text-base">

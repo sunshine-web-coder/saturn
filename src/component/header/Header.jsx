@@ -46,7 +46,7 @@ export default function Header() {
           <div>
             <img src="https://i.imgur.com/GtKPy40.png" alt="" />
           </div>
-          {isOpen && (
+          {/* {isOpen && ( */}
             <nav className={`navBar ${isOpen ? "open":"navBar"}`}>
               <ul className="flex gap-8 items-center">
                 {NavLinkData.map((links, i) => (
@@ -59,17 +59,23 @@ export default function Header() {
                     </Link>
                   </li>
                 ))}
+                 <div className="mobile_header_btn w-full p-5">
+                    <div className="flex w-full border flex-col gap-4">
+                      <Link className="block w-full text-center shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
+                      <Link className="block w-full text-center shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/signup">Sign Up</Link>
+                    </div>
+                  </div>            
               </ul>
             </nav>
-          )}
-            <div className="hidden md:block">
+          {/* )} */}
+            <div className="header_btn">
               <div className="flex items-center gap-2">
                 <Link className="block shadow-sm bg-[transparent] border border-[#00A9A4] text-[#00A9A4] p-3 pl-6 pr-6 rounded" to="/login">Log In</Link>
                 <Link className="block shadow-sm bg-[#00A9A4] text-[#ffffff] p-3 pl-6 pr-6 rounded" to="/signup">Sign Up</Link>
               </div>
             </div>
           
-          <div className="block md:hidden" onClick={toggle}>
+          <div className="hamburger" onClick={toggle}>
             {isOpen ? <TfiClose className="text-3xl text-[#00A9A4]" /> : <RxHamburgerMenu className="text-3xl text-[#00A9A4]" />}
           </div>
         </div>

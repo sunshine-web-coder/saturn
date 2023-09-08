@@ -64,7 +64,6 @@ export default function Header() {
             </div>
           
           <div className="block md:hidden">
-            {/* <i className="fa-solid text-lg text-[#00A9A4] fa-bars"></i> */}
             <RxHamburgerMenu className="text-3xl text-[#00A9A4]" />
           </div>
         </div>

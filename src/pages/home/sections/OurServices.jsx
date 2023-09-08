@@ -12,8 +12,8 @@ export default function OurServices() {
         </div>
         <div>
             <div className="mt-[40px] our_services_grid">
-            <img className="service-shape-one" src="https://i.imgur.com/rYz17CL.png" alt="" />
-            <img className="service-shape-two" src="https://i.imgur.com/tef4DrY.png" alt="" />
+            <img className="service-shape-one hidden" src="https://i.imgur.com/rYz17CL.png" alt="" />
+            <img className="service-shape-two hidden" src="https://i.imgur.com/tef4DrY.png" alt="" />
                 {ourServicesData.map((ourServices, i) => (
                 <div className="w-[100%] flex flex-col lg:flex-row flex-[0_0_auto] bg-[#161942] p-6 our_service_m rounded-xl" key={i}>
                     <div className="service_icon flex items-center justify-center">

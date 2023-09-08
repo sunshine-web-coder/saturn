@@ -16,6 +16,7 @@
 
   .inner_header {
     .navBar {
+      display: none;
       @media screen and (max-width: 850px) {
         position: absolute;
         left: 100%;
@@ -53,6 +54,7 @@
       }
     }
     .header_btn {
+      display: none;
       @media screen and (max-width: 850px) {
         display: none;
       }
@@ -60,7 +62,7 @@
     .hamburger {
       display: none;
       @media screen and (max-width: 850px) {
-        display: block;
+        display: none;
       }
     }
     @media screen and (max-width: 850px) {

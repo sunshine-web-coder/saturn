@@ -11,7 +11,7 @@ export default function Header() {
 
   return (
     <div className="header">
-      <div className="bg-[#030734] top_header">
+      <div className="bg-[#030734] hidden top_header">
         <div className="custom_container flex items-center justify-between gap-5">
           <div className="flex gap-5">
             <div className="text-[hsla(0,0%,100%,.8)] text-sm flex gap-2">
@@ -43,8 +43,9 @@ export default function Header() {
       </div>
       <div className="bg-[#FFFFFF] bottom_header">
         <div className="custom_container inner_header min-h-[90px] flex items-center justify-between">
-          <div>
-            <img src="https://i.imgur.com/GtKPy40.png" alt="" />
+          <div className="text-4xl font-bold text-[#00A9A4]">
+            {/* <img src="https://i.imgur.com/GtKPy40.png" alt="" /> */}
+            Saturn
           </div>
           {/* {isOpen && ( */}
             <nav className={`navBar ${isOpen ? "open":"navBar"}`}>

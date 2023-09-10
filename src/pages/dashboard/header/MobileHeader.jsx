@@ -1,10 +1,12 @@
 import { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { NavLink } from "./NavLink";
 import style from "./Style.module.scss"
 
 export default function MobileHeader({ toggleDropdown }) {
   const [isOpen, setIsOpen] = useState(false);
+
+  const navigate = useNavigate();
 
   const location = useLocation();
 
@@ -22,6 +24,10 @@ export default function MobileHeader({ toggleDropdown }) {
       document.body.style.overflow = "auto";
     }
   };
+
+  const navigateHome = () => {
+    navigate("/")
+  }
 
   return (
     <div className="max-w-[1120px] mx-auto flex items-center justify-between">
@@ -58,7 +64,7 @@ export default function MobileHeader({ toggleDropdown }) {
           <div className="p-4 text-[#d1f1ff]">
             <div className="flex justify-between">
               <div className="flex justify-between w-full items-center">
-                <button className="uppercase font-semibold">Log out</button>
+                <button className="uppercase font-semibold" onClick={navigateHome}>Log out</button>
                 <Link
                   to="/dashboard/profile"
                   className="uppercase"

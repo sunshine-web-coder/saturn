@@ -4,23 +4,23 @@ export const NavLinkData = [
         slug: ""
     },
     {
-        label: "About",
+        label: "Personal",
         slug: ""
     },
     {
-        label: "Services",
+        label: "Business",
         slug: ""
     },
     {
-        label: "Pages",
+        label: "Company",
         slug: ""
     },
     {
-        label: "Blog",
+        label: "Products",
         slug: ""
     },
     {
-        label: "Contact",
+        label: "Resources",
         slug: ""
     },
 ]

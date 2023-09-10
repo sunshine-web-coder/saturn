@@ -50,8 +50,8 @@ export default function AddMobile() {
               alt=""
             />
           </Link>
-          <Link to="/login" className="text-[#3B82F6] text-lg font-semibold">
-            Login
+          <Link to="/signin" className="text-[#3B82F6] text-lg font-semibold">
+          Sign in
           </Link>
         </div>
         <p className="text-center max-w-[400px] mx-auto text-[#001435] text-3xl font-semibold">

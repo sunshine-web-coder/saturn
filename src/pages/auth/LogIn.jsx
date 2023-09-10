@@ -44,7 +44,7 @@ export default function LogIn() {
   };
 
   return (
-    <div className="flex flex-col justify-between h-screen relative p-3 pt-24 md:pt-40">
+    <div className="flex flex-col justify-between h-screen relative p-3 pt-24 md:pt-[100px]">
       <div className="">
         <div className="logo mb-5 flex items-center justify-center">
           <Link to="/">

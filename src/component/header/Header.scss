@@ -9,50 +9,56 @@
     @media screen and (max-width: 850px) {
       position: fixed;
       top: 0;
-      z-index: 999;
+      z-index: 9999;
       width: 100%;
     }
   }
 
   .inner_header {
-    .navBar {
-      display: none;
-      @media screen and (max-width: 850px) {
-        position: absolute;
-        left: 100%;
-        right: 0;
-        top: 70px;
-        width: 500px;
-        background-color: #ffffff;
-        height: 100vh;
-        z-index: 9999;
+    .overlay {
+      z-index: -1;
+      .navBar {
+        @media screen and (max-width: 850px) {
+          position: absolute;
+          left: 100%;
+          right: 0;
+          top: 70px;
+          width: 500px;
+          background-color: #ffffff;
+          height: 100vh;
+          // z-index: 9999;
 
-        &.open {
-          left: 0;
-        }
+          &.open {
+            left: 0;
+          }
 
-        ul {
-          flex-direction: column;
-          align-items: flex-start;
-          gap: 0;
-          li {
-            width: 100%;
-            a {
-              display: block;
+          ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            li {
               width: 100%;
-              padding: 10px;
-              padding-left: 20px;
+              a {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                padding-left: 20px;
+              }
             }
           }
         }
-      }
-      .mobile_header_btn{
-        display: none;
-        @media screen and (max-width: 850px) {
-          display: block;
+        @media screen and (max-width: 500px) {
+          width: 100%;
+        }
+        .mobile_header_btn {
+          display: none;
+          @media screen and (max-width: 850px) {
+            display: block;
+          }
         }
       }
     }
+
     .header_btn {
       // display: none;
       @media screen and (max-width: 850px) {
@@ -62,7 +68,7 @@
     .hamburger {
       display: none;
       @media screen and (max-width: 850px) {
-        display: none;
+        display: block;
       }
     }
     @media screen and (max-width: 850px) {

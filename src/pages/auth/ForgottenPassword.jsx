@@ -88,10 +88,10 @@ export default function ForgottenPassword() {
             </div>
             <div className="mt-7 text-center">
               <Link
-                to="/login"
+                to="/signin"
                 className="font-semibold text-lg text-blue-500 hover:underline"
               >
-                Return to PayPal login
+                Return to PayPal sign in
               </Link>
             </div>
           </form>

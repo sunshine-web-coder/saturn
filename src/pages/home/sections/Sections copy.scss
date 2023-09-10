@@ -18,7 +18,7 @@
 // featureWrap
 .featureWrap {
   .featureWrapSpan {
-    width: 80px;
+    width: 60px;
     height: 60px;
     border: 1px solid rgba(0, 169, 164, 0.6);
     border-radius: 7px;
@@ -72,9 +72,6 @@
       }
     }
   }
-  @media screen and (max-width: 847px) {
-    width: 100%;
-  }
 }
 
 // why_choose_us
@@ -102,18 +99,13 @@
 
     .our_service_m {
       .service_icon {
-        width: 80px;
-        height: 70px;
-        border: 1px solid rgba(0, 169, 164, 0.6);
-        border-radius: 7px;
+        width: 200px;
+        height: 80px;
+        border-radius: 9px;
+        border: 1px solid hsla(0, 0%, 100%, 0.9);
         position: relative;
-        top: 0;
-        transition: 0.8s;
-        text-align: center;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
+        top: 2px;
+        transition: 0.4s;
 
         &::before {
           top: 10px;
@@ -124,7 +116,7 @@
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          background-color: #00a9a4;
+          background-color: hsla(0, 0%, 100%, 0.8);
           transition: 0.4s;
         }
 
@@ -134,7 +126,7 @@
           width: 8px;
           height: 8px;
           border-radius: 50%;
-          background-color: #00a9a4;
+          background-color: hsla(0, 0%, 100%, 0.8);
           transition: 0.4s;
           bottom: 10px;
           right: -4px;
@@ -144,7 +136,7 @@
           height: 70px;
         }
       }
-      .service_text {
+      .service_text{
         @media screen and (max-width: 1023px) {
           margin-left: 0;
           margin-top: 30px;

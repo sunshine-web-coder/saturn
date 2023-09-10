@@ -45,7 +45,7 @@ function App() {
     location.pathname.includes("/signup") ||
     location.pathname.includes("/dashboard") ||
     location.pathname === "/link_your_card" ||
-    location.pathname === "/login" ||
+    location.pathname === "/signin" ||
     location.pathname === "/forgotten_email" ||
     location.pathname === "/select" ||
     location.pathname === "/testing" ||
@@ -63,7 +63,7 @@ function App() {
         )}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LogIn />} />
+          <Route path="/signin" element={<LogIn />} />
           <Route path="/forgotten_password" element={<ForgottenPassword />} />
           <Route path="/forgotten_email" element={<ForgottenEmail />} />
           <Route exact path="/signup/*" element={<ForYou />}>

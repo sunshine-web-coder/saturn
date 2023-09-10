@@ -11,10 +11,10 @@ export default function HomeBanner() {
         <div className="custom_container flex flex-col md:flex-row gap-10 items-center justify-between">
             <div className="w-full md:w-[50%]">
                 <p className="text-[#00a9a4] mb-2 font-normal">Instant Money Transfer</p>
-                <h1 className="text-black mb-5 text-3xl md:text-5xl font-bold font-[Lora]">Transfer Money Across World In Real Time</h1>
-                <p className="mb-9">Dea of denouncing pleasure and praising pain was born and lete system, and expound the ac teachings aitems to sed quia non numquam amet sit dolor.</p>
+                <h1 className="text-black mb-5 text-3xl md:text-5xl font-bold font-[Lora]">Do more for yourself and your business</h1>
+                <p className="mb-9">Securely send money, manage your finances, enjoy cardless payment options, and visit that dream city with Saturn. It’s borderless. It’s simple. It’s fast. All from one app.</p>
                 <div>
-                    <Link to="/signup" className="block w-[150px] text-base font-normal text-center rounded text-white p-4 bg-[#00A9A4]">Get Started</Link>
+                    <Link to="/signup" className="block w-[200px] text-lg font-semibold text-center rounded text-white p-4 bg-[#00A9A4]">Get started for free</Link>
                 </div>
             </div>
             <div className="hero-img w-full md:w-[50%]">

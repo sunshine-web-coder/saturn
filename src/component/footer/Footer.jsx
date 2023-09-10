@@ -9,12 +9,12 @@ export default function Footer() {
             {/* <img src="https://i.imgur.com/GtKPy40.png" alt="" /> */}
             Saturn
           </div>
-          <p className="text-[black] text-base mt-[27px] mb-[30px]">
+          {/* <p className="text-[black] text-base mt-[27px] mb-[30px]">
             On the other hand, we denounce whteous indig nation and dislike men
             wh beguiled moraized er hand consec teturus adipis iscing elit
             eiusmod tempordunt labore dolore magna aliqua consector tetur adip
             iscing.
-          </p>
+          </p> */}
         </div>
         {/* <div className="w-full md:w-3/12"></div>
         <div className="w-full md:w-2/12"></div>

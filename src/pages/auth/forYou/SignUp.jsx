@@ -28,11 +28,9 @@ export default function SignUp() {
       <div className="max-w-[800px] h-screen mx-auto">
         <div className="logo mb-5 flex items-center justify-center">
           <Link to="/">
-            <img
-              className="w-8"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
         </div>
         <p className="text-center text-[#001435] text-3xl font-semibold">

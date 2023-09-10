@@ -129,11 +129,9 @@ export default function LinkYourCard() {
             <i className="fa-solid text-2xl fa-arrow-left-long"></i>
           </button>
           <Link to="/" className="relative right-5">
-            <img
-              className="w-6"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
           <div></div>
         </div>

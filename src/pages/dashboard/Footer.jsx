@@ -6,7 +6,6 @@ export default function Footer() {
       <div className="max-w-[1150px] mx-auto">
         <div className="flex flex-wrap gap-5 items-center pb-5 pt-5">
           <div className="text-3xl font-bold text-[#142C8E]">
-          {/* <img src="https://i.imgur.com/UjLnUh2.png" alt="" /> */}
                 Saturn
             </div>
           <nav className="">

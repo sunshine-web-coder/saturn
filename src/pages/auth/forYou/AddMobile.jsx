@@ -44,11 +44,9 @@ export default function AddMobile() {
         <div className="logo max-w-[800px] mx-auto mb-7 flex items-center justify-between">
           <div></div>
           <Link to="/">
-            <img
-              className="w-6"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
           <Link to="/signin" className="text-[#3B82F6] text-lg font-semibold">
           Sign in

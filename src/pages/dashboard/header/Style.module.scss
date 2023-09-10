@@ -1,0 +1,12 @@
+.mobile_nav {
+  width: 400px;
+  height: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #142c8e;
+  border-right: "1px solid #828bb1d0";
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+}

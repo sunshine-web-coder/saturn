@@ -39,7 +39,7 @@ export default function LogIn() {
     setPasswordError(errors.password || "");
 
     if (Object.keys(errors).length === 0) {
-      navigate("/signup/select_intent"); // Navigate only if there are no errors
+      navigate("/dashboard"); // Navigate only if there are no errors
     }
   };
 
@@ -48,11 +48,9 @@ export default function LogIn() {
       <div className="">
         <div className="logo mb-5 flex items-center justify-center">
           <Link to="/">
-            <img
-              className="w-8"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
         </div>
         <div className="mt-8 mx-auto max-w-[350px]">

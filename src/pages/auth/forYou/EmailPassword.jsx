@@ -69,7 +69,7 @@ export default function EmailPassword() {
     setPasswordError(errors.password || "");
     // Check if there are any errors
     if (Object.keys(errors).length === 0) {
-      navigate("/signup/name_address"); // Navigate only if there are no errors
+      navigate("/signup/user_address"); // Navigate only if there are no errors
     }
   };
 
@@ -89,11 +89,9 @@ export default function EmailPassword() {
             <i className="fa-solid text-2xl fa-arrow-left-long"></i>
           </button>
           <Link to="/">
-            <img
-              className="w-6"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
           <div></div>
         </div>

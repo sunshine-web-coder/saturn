@@ -40,11 +40,9 @@ export default function ForgottenPassword() {
       <div className="">
         <div className="logo mb-5 flex items-center justify-center">
           <Link to="/">
-            <img
-              className="w-8"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
         </div>
         <p className="text-center max-w-[400px] mx-auto text-[#001435] text-2xl font-semibold">

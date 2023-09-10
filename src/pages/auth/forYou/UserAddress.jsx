@@ -4,15 +4,15 @@ import FloatingLabelInput from "../../../component/input/FloatingLabelInput";
 import { Listbox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 import { Fragment, useState } from "react";
-import { countriesData } from "../../../data/countriesData";
+// import { countriesData } from "../../../data/countriesData";
 import { nigeriaStates } from "../../../data/nigeriaStates";
 import { DatePicker } from "antd";
 import Button from "../../../component/button/Button";
 import useAuthentication from "../../../routes/useAuthentication";
 
-export default function NameAddress() {
+export default function UserAddress() {
   const { isLogin } = useAuthentication();
-  const [selected, setSelected] = useState(countriesData[0]);
+  // const [selected, setSelected] = useState(countriesData[0]);
   const [selectedDate, setSelectedDate] = useState(null);
   const [addressOne, setAddressOne] = useState("");
   const [addressTwo, setAddressTwo] = useState("");
@@ -82,8 +82,15 @@ export default function NameAddress() {
   };
 
   const handleSelectedDateChange = (date) => {
+    const currentDate = new Date(); // Get the current date
+    if (date.isAfter(currentDate)) {
+      setSelectedDateError("Please select a valid date of birth.");
+    } else {
+      setSelectedDateError(""); // Reset the error message
       setSelectedDate(date);
+    }
   };
+  
 
   const navigateBack = () => {
     navigate(-1);
@@ -101,11 +108,9 @@ export default function NameAddress() {
             <i className="fa-solid text-2xl fa-arrow-left-long"></i>
           </button>
           <Link to="/">
-            <img
-              className="w-6"
-              src="https://i.ibb.co/mCHhPkS/Capture-removebg-preview.png"
-              alt=""
-            />
+            <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
+            </div>
           </Link>
           <div></div>
         </div>
@@ -117,7 +122,7 @@ export default function NameAddress() {
             Please use your primary residence. It can’t be a PO box.
           </p>
           <form onSubmit={handleSubmit} className="mt-10 flex flex-col gap-4">
-            <div className="relative z-30">
+            {/* <div className="relative z-30">
               <Listbox value={selected} onChange={setSelected}>
                 <div className="relative cursor-pointer mt-1">
                   <label
@@ -179,7 +184,7 @@ export default function NameAddress() {
                   </Transition>
                 </div>
               </Listbox>
-            </div>
+            </div> */}
 
             <div className="relative">
               <label

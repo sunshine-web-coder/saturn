@@ -8,7 +8,7 @@ import AddMobile from "./pages/auth/forYou/AddMobile";
 import CombinedProvider from "./context/CombinedProvider";
 import ConfirmYourPhone from "./pages/auth/forYou/ConfirmYourPhone";
 import EmailPassword from "./pages/auth/forYou/EmailPassword";
-import NameAddress from "./pages/auth/forYou/NameAddress";
+import UserAddress from "./pages/auth/forYou/UserAddress";
 import ForYou from "./pages/auth/forYou/ForYou";
 import LinkYourCard from "./pages/linkYourCard/LinkYourCard";
 import ForgottenPassword from "./pages/auth/ForgottenPassword";
@@ -74,7 +74,7 @@ function App() {
               element={<ConfirmYourPhone />}
             />
             <Route path="email_password" element={<EmailPassword />} />
-            <Route path="name_address" element={<NameAddress />} />
+            <Route path="user_address" element={<UserAddress />} />
           </Route>
           <Route exact path="/dashboard/*" element={<PrivateRoute />}>
             <Route index element={<Dashboard />} />

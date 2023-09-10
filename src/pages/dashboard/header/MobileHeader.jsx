@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { NavLink } from "./NavLink";
+import style from "./Style.module.scss"
 
 export default function MobileHeader({ toggleDropdown }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +32,8 @@ export default function MobileHeader({ toggleDropdown }) {
       </div>
       <div className="hidden">
         <Link to="/dashboard">
-          <div>
-            <img src="https://i.imgur.com/N20xYEO.png" alt="" />
+          <div className="text-4xl font-bold text-[#00A9A4]">
+              Saturn
           </div>
         </Link>
       </div>
@@ -50,18 +51,9 @@ export default function MobileHeader({ toggleDropdown }) {
         }`}
       >
         <div
-          className={`fixed w-[400px] z-50 transition-transform duration-300 ease-in-out ${
+          className={`fixed w-[400px] z-50 transition-transform duration-300 ease-in-out ${style.mobile_nav} ${
             isOpen ? "transform translate-x-0" : "transform translate-x-[-100%]"
           }`}
-          style={{
-            width: "400px",
-            height: "100%",
-            right: 0,
-            left: 0,
-            top: 0,
-            backgroundColor: "#142C8E",
-            borderRight: "1px solid #828bb1d0",
-          }}
         >
           <div className="p-4 text-[#d1f1ff]">
             <div className="flex justify-between">

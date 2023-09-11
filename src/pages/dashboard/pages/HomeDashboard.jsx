@@ -58,7 +58,7 @@ export default function HomeDashboard() {
               </div>
             </Link>
           </div>
-          <div className="mt-5">
+          <div className="mt-5 swiper_container">
             <Swiper
               slidesPerView={1}
               spaceBetween={30}

@@ -4,6 +4,10 @@ export const NavLink = [
     slug: "/dashboard",
   },
   {
+    label: "Profile",
+    slug: "/dashboard/profile",
+  },
+  {
     label: "Send",
     slug: "/dashboard/transfer",
   },

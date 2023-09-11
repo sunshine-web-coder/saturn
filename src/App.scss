@@ -612,3 +612,16 @@
     z-index: 1;
   }
 }
+
+.swiper_container {
+  .swiper-button-next {
+    @media screen and (max-width: 600px) {
+      margin-top: -100px;
+    }
+  }
+  .swiper-button-prev {
+    @media screen and (max-width: 600px) {
+      margin-top: -100px;
+    }
+  }
+}

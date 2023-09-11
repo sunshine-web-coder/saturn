@@ -61,9 +61,9 @@ export default function Header() {
               onClick={toggleDropdown}
             ></i>
 
-            <Link to="/dashboard/profile" className="uppercase">
+            {/* <Link to="/dashboard/profile" className="uppercase">
               <i className="fa-solid fa-gear"></i>
-            </Link>
+            </Link> */}
 
             <button className="uppercase text-sm font-norma ml-2"
             onClick={navigateHome}

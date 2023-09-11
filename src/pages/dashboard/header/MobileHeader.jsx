@@ -65,13 +65,13 @@ export default function MobileHeader({ toggleDropdown }) {
             <div className="flex justify-between">
               <div className="flex justify-between w-full items-center">
                 <button className="uppercase font-semibold" onClick={navigateHome}>Log out</button>
-                <Link
+                {/* <Link
                   to="/dashboard/profile"
                   className="uppercase"
                   onClick={closeMenu}
                 >
                   <i className="fa-solid text-2xl fa-gear"></i>
-                </Link>
+                </Link> */}
                 <i
                   className="fa-solid text-2xl fa-xmark"
                   onClick={closeMenu}

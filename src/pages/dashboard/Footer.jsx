@@ -17,7 +17,7 @@ export default function Footer() {
           </nav>
         </div>
         <div className="flex items-center gap-5 flex-wrap pb-5 pt-5">
-          <p className="text-sm text-[#757676]">©1999-2023 PayPal, Inc. All rights reserved.</p>
+          <p className="text-sm text-[#757676]">©2023 Saturn. All rights reserved.</p>
           <nav className="">
             <ul className="flex text-[#0c0c0d] text-sm gap-7">
                 <li><Link to="" className="hover:underline">Privacy</Link></li>
@@ -26,9 +26,9 @@ export default function Footer() {
             </ul>
           </nav>
         </div>
-        <div className="flex items-center pb-5 pt-5">
+        {/* <div className="flex items-center pb-5 pt-5">
           <p className="text-sm text-[#757676]">PayPal Pte. Ltd. is licensed by the Monetary Authority of Singapore as a Major Payment Institution under the Payment Services Act 2019.</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
